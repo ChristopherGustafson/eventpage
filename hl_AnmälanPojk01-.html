@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<meta charset="UTF-8">
+	<title>Hockeyläger</title>
+	
+	<link href="StylesheetHl.css" rel="stylesheet" type="text/css">
+	
+	<meta name="viewport" content="width=device-width">
+	
+	<script>
+	function submitBox() {
+			alert("Tack för din anmälan!");
+		}
+	</script>
+
+</head>
+
+<body>
+
+	<header>
+		
+		<a href="hl_startsida.html" class="header"><h1>Håtuna IK Hockeyläger 2016</h1></a>
+	
+	</header>
+	
+	<nav class="mobileContentNav">
+		<div id="alts">
+		
+			<div class="dropdown">
+			<div class="navAlt">
+				<a class="dropdownContent" href="">Om Oss</a>
+				<div class="dropdownAlts">
+					<a href="hl_Föreningen.html">Föreningen</a>
+					<a href="hl_FöreningenHistoria.html">Lägrets historia</a>
+					<a href="hl_FöreningenAnnat.html">Föreningens andra aktiviteter</a>
+				</div>
+				</div>
+			</div>
+			
+			<div class="dropdown">
+			<div class="navAlt">
+				<a class="dropdownContent" href="">Lägret</a>
+				<div class="dropdownAlts">
+					<a href="hl_LägretAktiviteter.html">Aktiviteter</a>
+					<a href="hl_LägretMat.html">Mat</a>
+					<a href="hl_LägretBoende.html">Boende</a>
+				</div>
+				</div>
+			</div>
+			
+			<div class="dropdown">
+			<div class="navAlt">
+				<a class="dropdownContent" href="">Anmälan</a>
+				<div class="dropdownAlts">
+					<a href="hl_AnmälanPojk00+.html">Pojkar 00 & äldre</a>
+					<a href="hl_AnmälanPojk01-.html">Pojkar 01 & yngre</a>
+					<a href="hl_AnmälanFlick00+.html">Flickor 00 & äldre</a>
+					<a href="hl_AnmälanFlick01-.html">Flickor 01 & yngre</a>
+				</div>
+				</div>
+			</div>
+			
+			<div class="dropdown">
+				<div class="navAlt"><a class="dropdownContent" href="hl_Sponsorer.html">Sponsra</a></div>
+			</div>
+			
+			<div class="dropdown">
+				<div class="navAlt"><a class="dropdownContent" href="hl_Kontakt.html">Kontakt</a></div>
+			</div>
+			
+		</div>
+	</nav>
+	
+	<main>
+	
+		<form>
+		
+			<h2>Anmälan för pojkar födda 01 och yngre</h2>
+		
+			Förnamn:<br>
+			<input class="input textInput" type="text" name="Förnamn"><br>
+			
+			Efternamn:<br>
+			<input class="input textInput" type="text" name="Efternamn"><br>
+			
+			Ålder:<br>
+			<input class="input" type="range" name="Ålder" min="6" max="15" oninput="document.getElementById('textInput').innerHTML=this.value;">
+			<h5 id="textInput">11</h5><br>
+			
+			Mailadress:<br>
+			<input class="input textInput" type="text" name="Mail"><br>
+			
+			Telefonnummer:<br>
+			<input class="input textInput" type="text" name="Telefonnummer"><br>
+			
+			Datum:<br>
+			<input class="input textInput" type="date" name="Datum"><br>
+			
+			Hockeyklubb:<br>
+			<input class="input textInput" type="text" name="Klubb"><br>
+			
+			År av erfarenhet med hockey:<br>
+			<input class="input textInput" type="number" name="Antal personer" min="1" max="20"><br>
+			
+			Allergier:<br>
+			<textarea class="input textInput" name="Ytterligare information"></textarea><br>
+			
+			<input class="input" type="submit" onclick="submitBox()">
+			
+		</form>
+		
+	</main>
+	
+	<footer>
+		
+		<div id="footerContent">
+			<h4>Kontaktuppgifter</h4>
+			<p> 
+				Telefon: 000 000 00 00<br>
+				Adress: Håtuna 1<br>
+				Mail: <a href="mailto:">Håtuna.IK@hotmail.com</a><br>
+			</p>
+		</div>
+		
+		<div id="footerIcons">
+			<a href=""><img class="icon" src="Bilder/facebook.png" alt="Facebook"></a>
+			<a href=""><img class="icon" src="Bilder/twitter.png" alt="Twitter"></a>
+			<a href=""><img class="icon" src="Bilder/instagram.png" alt="Instagram"></a>
+		</div>
+		
+	</footer>
+
+</body>
+</html>
+
+
+

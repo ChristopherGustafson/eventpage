@@ -1,0 +1,491 @@
+@media screen and (min-width: 800px){
+	
+	body{
+		background-color: #9ad3de;
+		font-size: 40px;
+		
+		 width: 100%;
+		 
+		 margin: 0 0 220px;
+		 padding: 0;
+	}
+	
+	html {
+		position: relative;
+		min-height: 100%;
+	}
+	
+	header{
+		margin: 0 auto;
+		width: 80%;
+		
+	}
+	
+	.header{
+		text-decoration: none;
+	}
+	
+	@font-face{
+		font-family: HeaderFont;
+		src: url("Fonter/Walkway_Black.ttf");
+	}
+	
+	@font-face{
+		font-family: textFont;
+		src: url("Fonter/FiraSans-Medium.ttf");
+	}
+	
+	h1{
+		font-family: HeaderFont;
+		font-weight: Bold;
+		color: #e3e3e3;
+		
+		text-align: center;
+		text-decoration: none;
+		font-size: 1.6em;
+	}
+	
+	nav{
+		background-color: #89bdd3;
+		overflow: auto;
+		
+		box-shadow: 0 1px 2px black;
+	}
+	
+	#alts{
+		width: 60%;
+		margin: 0 auto;
+		margin-left: 20%;
+	}
+	
+	.navAlt{
+		float: left; 
+		padding: 0.4% 0;
+		
+		width: 19.2%;
+	}
+
+	.navAlt:hover{
+		cursor: pointer;
+	}
+	
+	.navAlt, .dropdownContent{
+		display: inline-block;
+		
+		color: #e3e3e3;
+		font-family: textFont ;
+		font-size: 80%;
+		text-decoration: none;
+		text-align: center;
+		
+		-webkit-transition: background-color 0.3s;
+		transition-timing-function: ease-out;
+	}
+	
+	.navAlt:hover, .dropdown:hover .dropdownContent{
+		background-color: #59A2BA;
+	}
+	
+	.dropdownAlts{
+		display: none;
+		position: absolute;
+		margin-top: 2px;
+				
+		max-width: 16%;
+		min-width: 14%;
+		
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		
+		background-color: #59A2BA;
+		
+		transition: all 0s ease; 
+	}
+	
+	.dropdownAlts a{
+		color: #e3e3e3;
+		font-size: 60%;
+		text-decoration: none;
+		text-align: left;
+		
+		padding: 4% 2%;
+		
+		display: block;
+	}
+	
+	.dropdownAlts a:hover{
+		background-color: #325F6E;
+	}
+	
+	.dropdownAlts{
+		transition-delay: 0.5s;
+	}
+	
+	.dropdown:hover .dropdownAlts{
+		display: block;
+	}	
+	
+	main{
+		margin: 0 auto;
+		margin-top: 2%;
+		margin-bottom: 10%;
+	}
+	
+	form{
+		background-color: #e3e3e3;
+		width: 40%;
+		margin: 0 auto;
+		padding: 2%;
+		
+		text-align: center;
+		font-size: 50%;
+		font-family: Arial;
+		
+		border-radius: 5px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	
+	form h2{
+		font-family: textFont;
+		font-size: 120%;
+	}
+	
+	.input{
+		margin-bottom: 10px;
+	}
+	
+	.textInput{
+		width: 160px;	
+	}
+	
+	h5{
+		display: inline;
+	}
+	
+	.rslides {
+		position: relative;
+		list-style: none;
+		overflow: hidden;
+ 
+		width: 70%;
+		padding: 0;
+		margin: 0 auto;
+		display: block;
+		
+		border: 8px solid #e3e3e3;
+		border-radius: 5px;
+		
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		
+		z-index: -1;
+	}
+
+	.rslides li {
+		-webkit-backface-visibility: hidden;
+		position: absolute;
+		display: none;
+		width: 100%;
+		left: 0;
+		top: 0;
+	}
+
+	.rslides li:first-child {
+		position: relative;
+		display: block;
+		float: left;
+		
+	}
+
+	.rslides img {
+		display: block;
+		height: auto;
+		float: left;
+		width: 100%;
+		border: 0;
+	}
+	
+	.mainContent{
+		width: 60%;
+		margin: 0 auto;
+		padding: 2%;
+		background-color: #e3e3e3;
+		
+		border-radius: 5px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		
+		overflow: auto;
+	}
+	
+	h2{
+		font-family: textFont;
+		font-size: 80%;
+		text-align: center;
+	}
+
+	.textContent{
+		width: 40%;
+		margin: 0 5%;
+		float: left;
+		
+		font-size: 40%;
+		font-family: Arial;
+	}
+	
+	.imageContent{
+		width: 40%;
+		margin: 0 5%;
+		float: right;
+		
+	}
+	
+	.sponsorImage{
+		width: 45%;
+		margin: 3% 0;
+	}
+	
+	.textContent2{
+		margin: 0 5%;
+		
+		font-size: 40%;
+		font-family: Arial;
+	}
+	
+	.iFrame{
+		float: right;
+		width: 40%;
+		height: 180px;
+		margin-right: 5%;
+		margin-top: 2%;
+	}
+	
+	footer{
+		background-color: #89bdd3;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		
+		width: 100%;
+		height: 185px;
+	
+		overflow: auto;
+	}
+	
+	#footerContent{
+		color: #e3e3e3;
+		font-family: Arial;
+		
+		text-align: center;
+		font-size: 40%;
+	}
+	
+	#footerIcons{
+		text-align: center;
+	}
+	
+	.icon{
+		width: 40px;
+		opacity: 0.8;
+	}
+	
+	.icon:hover{
+		opacity: 1;
+	}
+	
+	
+}
+
+@media screen and (max-width: 800px){
+	
+	body{
+		background-color: #9ad3de;
+		font-size: 20px;
+	}
+	
+	@font-face{
+		font-family: HeaderFont;
+		src: url("Fonter/Walkway_Black.ttf");
+	}
+	
+	@font-face{
+		font-family: textFont;
+		src: url("Fonter/FiraSans-Medium.ttf");
+	}
+	
+	header{
+		background-color: #89bdd3;
+		width: 100%;
+		height: 100px;
+
+		overflow: hidden;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+	
+	.header{
+		text-decoration: none;
+	}
+	
+	header h1{
+		font-family: HeaderFont;
+		font-weight: Bold;
+		font-size: 1.4em;
+		color: #e3e3e3;
+		
+		text-align: center;
+	}
+	
+	nav{
+		padding-top: 100px;
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	.dropdown{
+		background-color: #89bdd3;
+		color: #e3e3e3;
+		
+		margin: 4% 0%;
+		padding: 2%;
+		
+		text-align: center;
+	}
+	
+	.dropdownContent{
+		font-family: textFont;
+		color: #e3e3e3;
+	}
+	
+	.mobileLink{
+		display: block;
+		background-color: #e3e3e3;
+		
+		font-family: textFont;
+		text-decoration: none;
+		color: #89bdd3;
+		
+		margin: 2%;
+	}
+	
+	main{
+		margin-top: 120px;
+		margin-bottom: 6%;
+		list-style: none;
+	}
+	
+	#mobileMain{
+		margin: 0;
+	}
+	
+	.mainContent{
+		width: 90%;
+		margin: 0 auto;
+		
+		background-color: white;
+		padding: 1% 0;
+		
+		border-radius: 5px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	
+	h2{
+		font-family: textFont;
+		text-align: center;
+	}
+
+	.textContent{
+		margin: 0 5%;
+
+		text-align: center;
+		font-family: Arial;
+	}
+	
+	.imageContent{
+		width: 65%;
+		margin: 0 auto;
+		
+	}
+
+	.iFrame{
+		width: 90%;
+		margin-left: 5%;
+		
+	}
+	
+	.textContent2{
+		margin: 0 5%;
+		
+		text-align: center;
+		font-family: Arial;
+	}
+	
+	.mobileContentNav{
+		display: none;
+	}
+	
+	form{
+		background-color: white;
+		width: 90%;
+		margin: 0 auto;
+		padding: 2%;
+		
+		text-align: center;
+		font-size: 80%;
+		font-family: Arial;
+		
+		border-radius: 5px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	
+	form h2{
+		font-family: textFont;
+		font-size: 120%;
+	}
+	
+	#textInput{
+		display: inline;
+	}
+	
+	.input{
+		margin-bottom: 10px;
+	}
+	
+	.textInput{
+		width: 160px;	
+	}
+	
+	.rslides{
+		list-style: none;
+	}
+	
+	.rslides img{
+		display: none;
+		list-style: none;
+	}
+	
+	footer{
+		background-color: #89bdd3;
+		
+		position: absolute;
+		width: 100%;
+		
+		left: 0;
+		bottom: 0 auto;
+	}
+	
+	#footerContent{
+		color: #e3e3e3;
+		font-family: Arial;
+		font-size: 80%;
+		
+		text-align: center;
+		
+	}
+	
+	#footerIcons{
+		text-align: center;
+	}
+	
+	.icon{
+		width: 40px;
+	}
+}
